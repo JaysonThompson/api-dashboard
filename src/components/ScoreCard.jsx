@@ -24,6 +24,7 @@ export default function ScoreCard() {
       };
     });
   });
+
   const scoreCardElement = gameStatsArray.map((game, index) => (
     <div key={index + 1} className="score-card">
       <div className="score-card-content">
