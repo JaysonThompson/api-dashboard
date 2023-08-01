@@ -100,7 +100,13 @@ body {
   padding: 2px;
   color: #fff;
   overflow: hidden;
+  border: 1px solid #68a2b9;
 }
+
+.score-card:hover {
+  border: none;
+}
+
 .score-card-content {
   width: 100%;
   inset: 5px;
@@ -110,7 +116,7 @@ body {
   background-color: #001628;
 }
 
-.score-card::before {
+.score-card:hover::before {
   content: "";
   position: absolute;
   width: 200%;
@@ -125,7 +131,7 @@ body {
   z-index: -1;
 }
 
-.score-card::after {
+.score-card:hover::after {
   content: "";
   position: absolute;
   width: 200%;
