@@ -4,6 +4,7 @@ export default function gameData() {
   const api =
     "https://statsapi.web.nhl.com/api/v1/schedule?teamId=55&startDate=2022-10-12&endDate=2023-04-13";
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { data } = useFetch(api);
 
   if (data) {
