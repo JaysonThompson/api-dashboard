@@ -8,8 +8,7 @@ export default function gameData() {
   const { data } = useFetch(api);
 
   if (data) {
-    const gameInfo = data.dates;
-    const gameData = gameInfo.map((date) => {
+    return data.dates.map((date) => {
       return date.games.map(({ teams: { away, home }, venue, gameDate }) => {
         const date = new Date(gameDate).toDateString();
         return {
@@ -28,6 +27,5 @@ export default function gameData() {
         };
       });
     });
-    return gameData;
   }
 }
