@@ -18,7 +18,7 @@ body {
 
 .main-container {
   padding: 25px;
-  background-color: #fff;
+  background-color: #68a2b9;
 }
 
 .header {
@@ -110,42 +110,36 @@ body {
 
 .score-card-content {
   width: 100%;
-  inset: 5px;
+  inset: 1px;
   background: #355464;
   padding: 15px;
   border-radius: 10px;
   background-color: #001628;
 }
-
-.score-card:hover::before {
-  content: "";
-  position: absolute;
-  width: 250%;
-  height: 250%;
-  background-image: conic-gradient(
-    transparent,
-    transparent,
-    transparent,
-    #68a2b9
-  );
-  animation: animate 4s linear infinite;
-  z-index: -1;
-}
-
+.score-card:hover::before,
 .score-card:hover::after {
   content: "";
   position: absolute;
   width: 250%;
   height: 250%;
+  animation: animate 4s linear infinite;
+  z-index: -1;
+}
+.score-card:hover::before,
+.score-card:hover::after {
   background-image: conic-gradient(
     transparent,
     transparent,
     transparent,
-    #e9072b
+    #e9072b,
+    transparent,
+    transparent,
+    transparent
   );
-  animation: animate 4s linear infinite;
+}
+
+.score-card:hover::after {
   animation-delay: -2s;
-  z-index: -1;
 }
 
 @keyframes animate {
