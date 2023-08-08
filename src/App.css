@@ -24,7 +24,7 @@ body {
 
 .main-container {
   padding: 25px;
-  background-color: #68a2b9;
+  background-color: var(--kraken-shadow-blue);
 }
 
 .header {
