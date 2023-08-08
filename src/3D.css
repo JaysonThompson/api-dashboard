@@ -57,6 +57,7 @@
 
 .card-front {
   display: grid;
+  background-color: rgba(0, 0, 0, 0.5);
   background-image: url("../src/assets/under-sea.png");
   background-size: cover;
   background-blend-mode: overlay;
