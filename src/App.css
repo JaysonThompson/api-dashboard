@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap");
-
+:root {
+  --kraken-red: #e9072b;
+  --kraken-ice-blue: #99d9d9;
+  --kraken-deep-sea-blue: #001628;
+  --kraken-boundless-blue: #355464;
+  --kraken-shadow-blue: #68a2b9;
+}
 * {
   box-sizing: border-box;
 }
@@ -12,7 +18,7 @@ body {
 body {
   margin: 75px auto;
   width: 75%;
-  background-color: #001628;
+  background-color: var(--kraken-deep-sea-blue);
   font-family: "Oswald", sans-serif;
 }
 
@@ -32,9 +38,9 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #68a2b9;
+  color: var(--kraken-ice-blue);
   align-items: center;
-  border: 5px solid #e9072b;
+  border: 5px solid var(--kraken-red);
   border-radius: 50%;
   height: 115px;
   width: 115px;
@@ -49,7 +55,7 @@ body {
   position: absolute;
   height: 35px;
   width: 155px;
-  border-top: 5px solid #e9072b;
+  border-top: 5px solid var(--kraken-red);
   z-index: -1;
 }
 
@@ -101,7 +107,7 @@ body {
   padding: 2px;
   color: #fff;
   overflow: hidden;
-  border: 1px solid #68a2b9;
+  border: 1px solid var(--kraken-shadow-blue);
 }
 
 .score-card:hover {
@@ -111,10 +117,9 @@ body {
 .score-card-content {
   width: 100%;
   inset: 1px;
-  background: #355464;
+  background: var(--kraken-deep-sea-blue);
   padding: 15px;
   border-radius: 10px;
-  background-color: #001628;
 }
 .score-card:hover::before,
 .score-card:hover::after {
@@ -131,7 +136,7 @@ body {
     transparent,
     transparent,
     transparent,
-    #e9072b,
+    var(--kraken-red),
     transparent,
     transparent,
     transparent
@@ -156,8 +161,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #68a2b9;
-  color: #001628;
+  background-color: var(--kraken-shadow-blue);
+  color: var(--kraken-deep-sea-blue);
   padding: 10px 0;
   border-radius: 10px;
   margin-bottom: 10px;

@@ -99,13 +99,15 @@
   content: "";
   display: grid;
   position: absolute;
+  place-items: center;
   --spacer: 1em;
   top: var(--spacer);
   bottom: var(--spacer);
   left: var(--spacer);
   right: var(--spacer);
   background-image: url("../src/assets/nhl-seattle-kraken-logo.png");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   transform: var(--level-three);
 }
 .card-back {
