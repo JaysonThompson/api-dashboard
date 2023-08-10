@@ -10,7 +10,7 @@
 }
 .hero-title {
   position: relative;
-  font-size: 64px;
+  font-size: 104px;
   color: transparent;
   text-transform: uppercase;
   opacity: 0;
@@ -26,7 +26,7 @@
   width: 100%;
   height: 0;
   color: red;
-  transition: height 5s ease-in;
+  transition: height 5s ease-in 1s;
   overflow: hidden;
 }
 .hero-title.animate {

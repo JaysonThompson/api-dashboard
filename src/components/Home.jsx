@@ -4,7 +4,7 @@ import RotatingCard from "./RotatingCard";
 export default function Home() {
   return (
     <div className="main-container">
-      <Hero title="Rise from the deep" />
+      <Hero title="Go puck yourself!" />
       <RotatingCard
         title="Seattle Kraken"
         subtitle="Release the"

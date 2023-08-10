@@ -8,7 +8,7 @@ export default function Hero({ title }) {
 
     setTimeout(() => {
       titleEl.classList.add("animate");
-    }, 2000);
+    }, 1000);
   }, []);
 
   return (
