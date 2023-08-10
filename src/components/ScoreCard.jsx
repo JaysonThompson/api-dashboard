@@ -2,6 +2,7 @@ import gameData from "../utils/gameData";
 
 export default function ScoreCard() {
   const data = gameData();
+
   if (data) {
     const scoreCardElement = data.map((game, index) => (
       <div key={index + 1} className="score-card">
@@ -32,7 +33,10 @@ export default function ScoreCard() {
         </div>
       </div>
     ));
-
-    return <div className="score-cards-container">{scoreCardElement}</div>;
+    return (
+      <>
+        <div className="score-cards-container">{scoreCardElement}</div>
+      </>
+    );
   }
 }

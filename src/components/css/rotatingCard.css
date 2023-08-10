@@ -33,7 +33,7 @@
   padding: 5em;
   transition: transform 4s;
   transform-style: preserve-3d;
-  height: 75vh;
+  height: 25vh;
   cursor: pointer;
 }
 

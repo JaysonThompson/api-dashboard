@@ -44,7 +44,7 @@ body {
   height: 115px;
   width: 115px;
   position: relative;
-  background-color: #001628;
+  background-color: var(--kraken-deep-sea-blue);
   text-decoration: none;
 }
 

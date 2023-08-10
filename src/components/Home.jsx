@@ -1,11 +1,15 @@
-import HeaderVideo from "./HeaderVideo";
-import RotationBanner from "./RotationBanner";
+import Hero from "./Hero";
+import RotatingCard from "./RotatingCard";
 
 export default function Home() {
   return (
     <div className="main-container">
-      <HeaderVideo />
-      <RotationBanner />
+      <Hero title="Rise from the deep" />
+      <RotatingCard
+        title="Seattle Kraken"
+        subtitle="Release the"
+        cardBackText=""
+      />
     </div>
   );
 }
