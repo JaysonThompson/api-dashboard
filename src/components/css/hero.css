@@ -5,8 +5,6 @@
 .hero-text-wrapper {
   display: grid;
   place-items: center;
-  height: 500px;
-  overflow: hidden;
 }
 .hero-title {
   position: relative;
@@ -35,4 +33,17 @@
 }
 .hero-title.animate::before {
   height: 100%;
+}
+
+@media (max-width: 480px) {
+  .hero-text-wrapper {
+    height: 400px;
+  }
+  .hero-title {
+    font-size: 80px;
+  }
+  .hero-title.animate {
+    opacity: 1;
+    transform: translateY(-100px);
+  }
 }

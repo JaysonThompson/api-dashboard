@@ -1,5 +1,7 @@
 import gameData from "../utils/gameData";
 
+import "../components/css/scoreCard.css";
+
 export default function ScoreCard() {
   const data = gameData();
 

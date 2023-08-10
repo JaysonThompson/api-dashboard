@@ -114,3 +114,10 @@
   transform: rotateY(0.5turn);
   background: var(--kraken-ice-blue);
 }
+
+@media (max-width: 480px) {
+  .card-content {
+    padding: 0;
+    height: 70vh;
+  }
+}
