@@ -6,6 +6,7 @@
   display: grid;
   place-items: center;
 }
+
 .hero-title {
   position: relative;
   font-size: 104px;
@@ -13,9 +14,10 @@
   text-transform: uppercase;
   opacity: 0;
   transform: translateY(100px);
-  -webkit-text-stroke: 1px red;
+  -webkit-text-stroke: 1px var(--kraken-shadow-blue);
   transition: all 2s ease-in;
 }
+
 .hero-title::before {
   content: attr(data-text);
   position: absolute;
@@ -23,14 +25,16 @@
   left: 0;
   width: 100%;
   height: 0;
-  color: red;
+  color: var(--kraken-shadow-blue);
   transition: height 5s ease-in 1s;
   overflow: hidden;
 }
+
 .hero-title.animate {
   opacity: 1;
   transform: translateY(-200px);
 }
+
 .hero-title.animate::before {
   height: 100%;
 }
