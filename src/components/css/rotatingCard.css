@@ -58,7 +58,7 @@
 .card-front {
   display: grid;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../src/assets/under-sea.png");
+  background-image: url("../../assets/under-sea.png");
   background-size: cover;
   background-blend-mode: overlay;
 }
@@ -105,7 +105,7 @@
   bottom: var(--spacer);
   left: var(--spacer);
   right: var(--spacer);
-  background-image: url("../src/assets/nhl-seattle-kraken-logo.png");
+  background-image: url("../../assets/nhl-seattle-kraken-logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   transform: var(--level-three);
